@@ -1,7 +1,5 @@
+SUBDIRS =
 
-if WANT_JANSSON
-SUBDIRS	= jansson
-else
-SUBDIRS	=
+if WANT_STATIC_JANSSON
+SUBDIRS	+= jansson-2.9
 endif
-
